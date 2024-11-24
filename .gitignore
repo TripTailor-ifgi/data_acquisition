@@ -1,3 +1,21 @@
+# Exclude IDE settings
 .idea/
-muenster-regbez-latest.osm.pbf
+
+# Exclude the downloaded OSM data file
+data/muenster-regbez-latest.osm.pbf
+
+# Exclude Python virtual environments
 .venv/
+
+# Exclude compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude temporary files
+*.swp
+*.swo
+.DS_Store
+
+# Exclude logs and temporary output
+*.log

@@ -1,20 +1,63 @@
-## Data Acquisition
+# TripTailor: Dynamic Travel Route Optimization
 
-TripTailor integrates open-source data to provide accurate and dynamic travel routes. For data related to Münster, we leverage the following resources:
+## Overview
 
-### 1. Open Data Münster
-Münster offers a wealth of open-source data through its Open Data platform:
+TripTailor is a travel route optimization tool that integrates open-source geographic data to provide dynamic and accurate travel routes. By leveraging public datasets, we ensure that our platform remains up-to-date and highly reliable for travelers.
 
-- **Website**: [Open Data Münster](https://opendata.stadt-muenster.de/)
-- **Dataset für Münster**: [OpenStreetMap Raw Data for Münster](https://opendata.stadt-muenster.de/dataset/openstreetmaps-rohdaten-f%C3%BCr-m%C3%BCnster)
-- **Download** the dataset and add it to `data_acquisition`
+---
 
-This data can be used to enrich the platform with detailed and localized geographical information.
+## Features
 
-### 2. Importing OpenStreetMap Data with osm2pgsql
-To import and work with OpenStreetMap (OSM) data for Münster, consider using **osm2pgsql**:
+- Integrates OSM data to dynamically update routes.
+- Visualizes museum data on an interactive map.
 
-- **Tool**: [osm2pgsql flex-config](https://github.com/osm2pgsql-dev/osm2pgsql/tree/master/flex-config)
-- **Description**: osm2pgsql is a powerful tool for importing OpenStreetMap data into a PostgreSQL/PostGIS database, allowing for efficient querying and route optimization.
+---
 
-Using these resources, TripTailor ensures up-to-date and high-quality data for enhanced route customization and navigation.
+## Prerequisites
+
+1. Install Python dependencies:
+   `pip install -r requirements.txt`
+
+2. Ensure PostgreSQL is installed with PostGIS enabled.
+
+---
+
+## Usage
+
+1. Clone the repository:  
+   `git clone https://github.com/username/TripTailor.git`  
+   `cd TripTailor`
+
+2. Update database credentials in `db_setup.py` under `DB_CREDENTIALS`.
+
+3. Run the pipeline:  
+   `python main.py`
+
+4. Open the map:  
+   View the generated `data/map.html` in any browser to explore museums in Münster.
+
+---
+
+## Future Enhancements
+
+1. Add route optimization for multi-stop journeys.
+2. Allow users to specify custom points of interest.
+3. Enable real-time updates from OpenStreetMap.
+
+## Project Structure
+TripTailor/
+│
+├── data/
+│   ├── muenster-regbez-latest.osm.pbf   # Raw OSM data for Münster
+│   ├── museums.geojson                  # Extracted museum data in GeoJSON format
+│   ├── map.html                         # Generated interactive map
+│
+├── scripts/
+│   ├── getOSM.py                        # Script to download OSM data
+│   ├── db_setup.py                      # Script to set up PostgreSQL database
+│   ├── query_data.py                    # Script to query museum data
+│   ├── visualize_map.py                 # Script to generate the interactive map
+│
+├── main.py                              # Orchestrates the entire pipeline
+├── requirements.txt                     # Python dependencies
+└── README.md                            # Project documentation
