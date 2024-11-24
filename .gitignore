@@ -3,6 +3,8 @@
 
 # Exclude the downloaded OSM data file
 data/muenster-regbez-latest.osm.pbf
+data/museums.geojson
+data/map.html
 
 # Exclude Python virtual environments
 .venv/

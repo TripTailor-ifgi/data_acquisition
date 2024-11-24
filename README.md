@@ -43,21 +43,3 @@ TripTailor is a travel route optimization tool that integrates open-source geogr
 1. Add route optimization for multi-stop journeys.
 2. Allow users to specify custom points of interest.
 3. Enable real-time updates from OpenStreetMap.
-
-## Project Structure
-TripTailor/
-│
-├── data/
-│   ├── muenster-regbez-latest.osm.pbf   # Raw OSM data for Münster
-│   ├── museums.geojson                  # Extracted museum data in GeoJSON format
-│   ├── map.html                         # Generated interactive map
-│
-├── scripts/
-│   ├── getOSM.py                        # Script to download OSM data
-│   ├── db_setup.py                      # Script to set up PostgreSQL database
-│   ├── query_data.py                    # Script to query museum data
-│   ├── visualize_map.py                 # Script to generate the interactive map
-│
-├── main.py                              # Orchestrates the entire pipeline
-├── requirements.txt                     # Python dependencies
-└── README.md                            # Project documentation
