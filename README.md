@@ -7,6 +7,7 @@ Münster offers a wealth of open-source data through its Open Data platform:
 
 - **Website**: [Open Data Münster](https://opendata.stadt-muenster.de/)
 - **Dataset für Münster**: [OpenStreetMap Raw Data for Münster](https://opendata.stadt-muenster.de/dataset/openstreetmaps-rohdaten-f%C3%BCr-m%C3%BCnster)
+- **Download** the dataset and add it to `data_acquisition`
 
 This data can be used to enrich the platform with detailed and localized geographical information.
 
