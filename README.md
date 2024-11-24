@@ -25,8 +25,8 @@ TripTailor is a travel route optimization tool that integrates open-source geogr
 ## Usage
 
 1. Clone the repository:  
-   `git clone https://github.com/username/TripTailor.git`  
-   `cd TripTailor`
+   `git clone https://github.com/TipTailor/data_acquisition`  
+   `cd data_acquisition`
 
 2. Update database credentials in `db_setup.py` under `DB_CREDENTIALS`.
 

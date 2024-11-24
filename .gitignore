@@ -7,7 +7,7 @@ data/museums.geojson
 data/map.html
 
 # Exclude Python virtual environments
-.venv/
+venv/
 
 # Exclude compiled Python files
 __pycache__/
