@@ -21,7 +21,9 @@ TripTailor is a travel route optimization tool that integrates open-source geogr
 
 2. Install Python dependencies (create venv in repo):
    `python3 -m venv venv/`
+
    `source venv/bin/activate`
+
    `pip install -r requirements.txt`
 
 3. Update database credentials in `db_setup.py` and `query_data` under `DB_CREDENTIALS`.
