@@ -59,7 +59,3 @@ Open the generated file `data/map.html` in any web browser to explore museums in
 1. 🌍 **Multi-Stop Route Optimization**: Add functionality to optimize journeys with multiple stops.
 2. 📌 **Custom Points of Interest**: Enable users to specify personalized locations of interest.
 3. 🔄 **Real-Time Updates**: Incorporate live updates directly from OpenStreetMap.
-
----
-
-![Visualization of the codebase](./diagram.svg)

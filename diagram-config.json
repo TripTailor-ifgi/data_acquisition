@@ -1,6 +1,0 @@
-{
-  "layout": "compact",
-  "include": ["data", "scripts", "*.py"],
-  "exclude": [".git", "node_modules", ".venv", ".gitignore"],
-  "max-depth": 3
-}
