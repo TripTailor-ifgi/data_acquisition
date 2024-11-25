@@ -13,27 +13,25 @@ TripTailor is a travel route optimization tool that integrates open-source geogr
 
 ---
 
-## Prerequisites
-
-1. Install Python dependencies:
-   `pip install -r requirements.txt`
-
-2. Ensure PostgreSQL is installed with PostGIS enabled.
-
----
-
 ## Usage
 
 1. Clone the repository:  
    `git clone https://github.com/TipTailor/data_acquisition`  
    `cd data_acquisition`
 
-2. Update database credentials in `db_setup.py` under `DB_CREDENTIALS`.
+2. Install Python dependencies (create venv in repo):
+   `python3 -m venv venv/`
+   `source venv/bin/activate`
+   `pip install -r requirements.txt`
 
-3. Run the pipeline:  
+3. Update database credentials in `db_setup.py` and `query_data` under `DB_CREDENTIALS`.
+
+4. Ensure PostgreSQL is installed with PostGIS enabled.
+
+5. Run the pipeline:  
    `python main.py`
 
-4. Open the map:  
+6. Open the map:  
    View the generated `data/map.html` in any browser to explore museums in Münster.
 
 ---
