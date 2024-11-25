@@ -15,13 +15,7 @@ jobs:
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
-          excluded_paths: |
-            .git/,
-            .github/,
-            .idea/,
-            .venv/,
-            node_modules/,
-            __pycache__/
+          config_path: diagram-config.json
       - name: Upload diagram to repository
         uses: actions/upload-artifact@v3
         with:
