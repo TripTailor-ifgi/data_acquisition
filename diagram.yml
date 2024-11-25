@@ -1,0 +1,27 @@
+name: Create diagram
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+jobs:
+  generate_diagram:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@main
+        with:
+          excluded_paths: |
+            .git/,
+            .github/,
+            .idea/,
+            .venv/,
+            node_modules/,
+            __pycache__/
+      - name: Upload diagram to repository
+        uses: actions/upload-artifact@v3
+        with:
+          name: repo-diagram
+          path: diagram.svg
