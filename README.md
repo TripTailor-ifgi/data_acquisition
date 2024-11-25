@@ -8,8 +8,15 @@
 
 ## **Key Features**
 
-- 🚀 **Dynamic Route Updates**: Seamlessly integrates with OpenStreetMap (OSM) data for real-time updates.
-- 🗺️ **Interactive Mapping**: Visualizes museum data on an interactive, user-friendly map.
+- **Dynamic Route Updates**: Seamlessly integrates with OpenStreetMap (OSM) data for real-time updates.
+- **Interactive Mapping**: Visualizes museum data on an interactive, user-friendly map.
+
+---
+
+## **Data**
+
+The project tries to combine different data sources for the route algorithm and visualization.
+This project skeleton uses [OSM data](https://download.geofabrik.de/europe/germany/nordrhein-westfalen/muenster-regbez-latest.osm.pbf) for the beginning. 
 
 ---
 
