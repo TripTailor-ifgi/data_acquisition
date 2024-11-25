@@ -1,45 +1,54 @@
-# TripTailor: Dynamic Travel Route Optimization
+# **TripTailor: Dynamic Travel Route Optimization**
 
-## Overview
+## **Overview**
 
-TripTailor is a travel route optimization tool that integrates open-source geographic data to provide dynamic and accurate travel routes. By leveraging public datasets, we ensure that our platform remains up-to-date and highly reliable for travelers.
-
----
-
-## Features
-
-- Integrates OSM data to dynamically update routes.
-- Visualizes museum data on an interactive map.
+**TripTailor** is a powerful travel route optimization tool that uses open-source geographic data to create dynamic, accurate travel routes. By leveraging public datasets, TripTailor ensures an up-to-date and highly reliable platform for travelers.
 
 ---
 
-## Usage
+## **Key Features**
 
-1. Clone the repository:  
-   `git clone https://github.com/TipTailor/data_acquisition`  
-   `cd data_acquisition`
-
-2. Install Python dependencies (create venv in repo):
-   `python3 -m venv venv/`
-
-   `source venv/bin/activate`
-
-   `pip install -r requirements.txt`
-
-3. Update database credentials in `db_setup.py` and `query_data` under `DB_CREDENTIALS`.
-
-4. Ensure PostgreSQL is installed with PostGIS enabled.
-
-5. Run the pipeline:  
-   `python main.py`
-
-6. Open the map:  
-   View the generated `data/map.html` in any browser to explore museums in Münster.
+- 🚀 **Dynamic Route Updates**: Seamlessly integrates with OpenStreetMap (OSM) data for real-time updates.
+- 🗺️ **Interactive Mapping**: Visualizes museum data on an interactive, user-friendly map.
 
 ---
 
-## Future Enhancements
+## **Getting Started**
 
-1. Add route optimization for multi-stop journeys.
-2. Allow users to specify custom points of interest.
-3. Enable real-time updates from OpenStreetMap.
+Follow these steps to set up and use TripTailor:
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/TipTailor/data_acquisition
+cd data_acquisition
+```
+
+### **2. Set Up a Virtual Environment**
+```bash
+python3 -m venv venv/
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### **3. Configure Database Credentials**
+Update the following files with your database credentials:
+`db_setup.py` and `query_data.py` under `DB_CREDENTIALS`
+
+### **4. Install and Configure PostgreSQL**
+Ensure PostgreSQL is installed and has **PostGIS** enabled.
+
+### **5. Run the Data Pipeline**
+```bash
+python main.py
+```
+
+### **6. View the Interactive Map**
+Open the generated file `data/map.html` in any web browser to explore museums in Münster.
+
+---
+
+## **Planned Enhancements**
+
+1. 🌍 **Multi-Stop Route Optimization**: Add functionality to optimize journeys with multiple stops.
+2. 📌 **Custom Points of Interest**: Enable users to specify personalized locations of interest.
+3. 🔄 **Real-Time Updates**: Incorporate live updates directly from OpenStreetMap.
