@@ -5,7 +5,7 @@ import psycopg2
 # Replace credentials if necessary
 DB_CREDENTIALS = {
     "user": "postgres",
-    "password": "3004",
+    "password": "****",
     "host": "localhost",
     "port": "4321",
     "dbname": "osm_data"
