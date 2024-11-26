@@ -54,7 +54,7 @@ Update the following files with your database credentials:
 `db_setup.py` and `query_data.py` under `DB_CREDENTIALS`
 
 ### **4. Install and Configure PostgreSQL**
-Recommendation: Use docker for [PostgreSQL](https://hub.docker.com/r/kartoza/postgis?uuid=98487F27-1389-4416-A140-44455E440AA5)
+Recommendation: Use docker for [PostgreSQL](https://hub.docker.com/r/kartoza/postgis?uuid=98487F27-1389-4416-A140-44455E440AA5)\
 Ensure PostgreSQL is installed and has **PostGIS** enabled.
 
 ### **5. Run the Data Pipeline**
