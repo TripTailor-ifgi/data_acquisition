@@ -30,6 +30,9 @@ git clone https://github.com/TipTailor/data_acquisition
 cd data_acquisition
 ```
 
+### **2. Install osm2pgsql**
+To run this project successfully, you must have osm2pgsql installed on your system; please follow the installation instructions provided at [osm2pgsql installation](https://osm2pgsql.org/doc/install.html) guide.
+
 ### **2. Set Up a Virtual Environment**
 
 MacOS

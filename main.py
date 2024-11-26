@@ -18,7 +18,7 @@ def main():
     db_setup.enable_extensions()
 
     # Step 4: Import OSM data
-    db_setup.load_osm_data("data/muenster-regbez-latest.osm.pbf")
+    db_setup.load_osm_data("data/muenster-regbez-latest.osm.pbf","data/compatible.lua")
 
     # Step 5: Query the database for museums in Münster
     success = query_data.query_museum_data("Münster")
