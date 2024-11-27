@@ -33,6 +33,11 @@ cd data_acquisition
 ### **2. Install osm2pgsql**
 To run this project successfully, you must have osm2pgsql installed on your system; please follow the installation instructions provided at [osm2pgsql installation](https://osm2pgsql.org/doc/install.html) guide.
 
+For Windows:
+1. Download the osm2sql file
+2. Unzip it to path
+3. Run `$Env:PATH += ";E:\PRO\osm2pgsql-bin"` to add the path (if sth doesn't work, ask Wenhao)
+
 ### **2. Set Up a Virtual Environment**
 
 MacOS
