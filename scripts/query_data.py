@@ -4,7 +4,7 @@ import json
 # Replace credentials if necessary
 DB_CREDENTIALS = {
     "user": "postgres",
-    "password": "****",
+    "password": "3004",
     "host": "localhost",
     "port": "4321",
     "dbname": "osm_data"

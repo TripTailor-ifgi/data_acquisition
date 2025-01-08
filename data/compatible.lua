@@ -7,7 +7,7 @@
 -- The output projection used (3857, web mercator is the default). Set this
 -- to 4326 if you were using the -l|--latlong option or to the EPSG
 -- code you were using on the -E|-proj option.
-local srid = 3857
+local srid = 4326
 
 -- Set this to true if you were using option -K|--keep-coastlines.
 local keep_coastlines = false
